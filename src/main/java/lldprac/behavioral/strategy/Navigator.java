@@ -21,6 +21,7 @@ public class Navigator {
 
 
     //Pass through method; does nothing; passes through to strategy
+    //This navigate method has no relation with navigate methode in Interface, it's name can be anything
     public Double navigate(String from, String to){
         return navigationStrategy.navigate(from, to);
     }
