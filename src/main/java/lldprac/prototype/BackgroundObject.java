@@ -48,5 +48,11 @@ public class BackgroundObject implements GraphicalObject{
         // that was mentioned in interface. We're basically doing subtyping
         return new BackgroundObject(this); //Calling a copy constructor, so we can simply copy subsequent objects
         // and not create new objects from scratch
+
+        //we can also do this:
+        //BackgroundObject clone=new BackgroundObject(this); return clone;
+        //Here "this" refers to the object which called this cloneObject() method (from Test class) which is "prototype"
+        //But in cloneObject method, "this" refers to the object which calls BackgroundObject ctor, which is "clone"
+
     }
 }
