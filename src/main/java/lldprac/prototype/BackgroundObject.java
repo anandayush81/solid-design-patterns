@@ -33,7 +33,7 @@ public class BackgroundObject implements GraphicalObject{
         this.width = obj.width;
         this.height = obj.height;
         this.type = obj.type;
-        this.pixels = obj.generatePixels(); //Making Shallow copy here. Don't call generatePixel() for each object
+        this.pixels = obj.pixels; //Making Shallow copy here. Don't call generatePixel() for each object
     }
 
     private List<Integer> generatePixels() { //This method will be and should be called only once.
